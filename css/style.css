@@ -1,0 +1,90 @@
+/* Google Fonts Import*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Pacifico&display=swap");
+
+:root{
+    --pacifico: "Pacifico", serif;
+    --open-sans: "Open+Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--pacifico);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+/* Food Description Boxes*/
+p {
+   padding: 30px 5px 0px 5px;
+   font-size: 16px;
+   font-family: var(--open-sans);
+   position: relative;
+}
+
+.column {
+    background-color: #FFEFD5;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+/* Food Color Labels*/
+#chicken {
+    background-color: #FFCCC6;
+}
+#beef {
+    background-color: #FF6347;
+}
+#sushi {
+    background-color: #3CB371;
+}
+
+span {
+    font-size: 20px;
+    font-family: var(--pacifico);
+    width: 140px;
+    border: 1px solid black;
+    text-align: center;
+    position: absolute;
+    float: right; 
+    top :0; 
+    right: 0;
+}
+
+/* Responsive Framework */
+.row {
+    width: 100%;
+  }
+ 
+/* Desktop view */
+  @media (min-width: 992px) {
+   .col-lg-4 {
+    width: 33.33%;
+    float: left;
+    }
+}
+      
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+    width: 50%;
+    float: left;
+    }
+    .col-md-12 {
+    width: 100%;
+    float: left;
+    }
+}
+      
+/* Mobile view */
+@media (max-width: 767px)  {
+    .col-sm-12 {
+    width: 100%;
+    float: left;
+    }
+}
